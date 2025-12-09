@@ -16,8 +16,7 @@ public class SuperAnimal extends Animal {
 		immortal = defaultImmortal;
 	}
 	
-	//getter methods 
-	
+	//getter methods
 	public boolean getWings() {
 		return wings;
 	}
@@ -31,7 +30,6 @@ public class SuperAnimal extends Animal {
 	}
 	
 	//setter methods 
-	
 	public void setWings(boolean newWings) {
 		wings = newWings;
 	}
@@ -45,7 +43,7 @@ public class SuperAnimal extends Animal {
 	}
 	
 	//action methods 
-	
+	//this method provides information on whether the super animal can fly
 	public String fly() {
 		if (wings == true) {
 			return getName() + " is flying!\n";
@@ -54,7 +52,8 @@ public class SuperAnimal extends Animal {
 			return getName() + " cannot fly without wings.\n";
 		}
 	}
-	
+
+	//this method provides information on whether the super animal can teleport
 	public String teleport(String toPlace) {
 		if (canTeleport == true) {
 			return getName() + " is teleporting to " + toPlace + "!\n";
@@ -63,7 +62,8 @@ public class SuperAnimal extends Animal {
 			return getName() + " cannot teleport.\n";
 		}
 	}
-	
+
+	//this method provides information on whether the super animal is immortal
 	public String immortal() {
 		System.out.print("Oh no! " + getName() + " has died! ");
 		if (immortal == true) {
