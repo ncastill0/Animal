@@ -2,21 +2,19 @@
  * TestSuperAnimal 
  * Norah Castillo
  * December 9, 2025
- * This is a class that creates the animal objects based off of the Animal class and tests them.
+ * This is a class that creates the super animal objects based off of the Super Animal class and tests them.
  */
 package defaultpackage;
 public class TestSuperAnimal {
 
 	public static void main(String[] args) {
-		//creating 2 animal objects 
-		
+		//creating 2 animal objects where one of them can fly but cannot teleport and the other cannot fly but can teleport
 		SuperAnimal dragon = new SuperAnimal("dragon", "varanidae", "reptilia", "nocturnal", 50, "carnivore", 4, true, false, false);
 		SuperAnimal unicorn = new SuperAnimal("unicorn", "equidae", "mammalia", "diurnal", 1000, "herbivore", 4, false, true, true);
 		
 		//displaying initial attributes 
 		System.out.println("Initial attributes of 'dragon': ");
 		printing(dragon);
-		
 		System.out.println("Initial attributes of 'unicorn': ");
 		printing(unicorn);
 		
@@ -39,7 +37,6 @@ public class TestSuperAnimal {
 		//displaying final attributes 
 		System.out.println("Initial attributes of 'dragon': ");
 		printing(dragon);
-				
 		System.out.println("Initial attributes of 'unicorn': ");
 		printing(unicorn);
 	}
