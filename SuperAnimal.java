@@ -1,3 +1,9 @@
+/**
+ * Animal 
+ * Norah Castillo
+ * December 9, 2025
+ * This is a class that contains the attributes and actions of super animals to create super animal objects. It also inherits the traits of the Animal class.
+ */
 package defaultpackage;
 
 public class SuperAnimal extends Animal {
