@@ -51,33 +51,39 @@ public class SuperAnimal extends Animal {
 	//action methods 
 	//this method provides information on whether the super animal can fly
 	public String fly() {
+		String flying = getName() + " is flying!\n";
+		String cantFly = getName() + " cannot fly without wings.\n";
 		if (wings == true) {
-			return getName() + " is flying!\n";
+			return flying;
 		}
 		else {
-			return getName() + " cannot fly without wings.\n";
+			return cantFly;
 		}
 	}
-
+	
 	//this method provides information on whether the super animal can teleport
 	public String teleport(String toPlace) {
+		String teleport = getName() + " is teleporting to " + toPlace + "!\n";
+		String cantTeleport =  getName() + " cannot teleport.\n";
 		if (canTeleport == true) {
-			return getName() + " is teleporting to " + toPlace + "!\n";
+			return teleport;
 		}
 		else {
-			return getName() + " cannot teleport.\n";
+			return cantTeleport;
 		}
 	}
-
+	
 	//this method provides information on whether the super animal is immortal
 	public String immortal() {
 		System.out.print("Oh no! " + getName() + " has died! ");
+		String revived =  "But it's okay, " + getName() + " has revived as they are immortal!\n";
+		String dead = "There is no coming back from this.\n";
 		if (immortal == true) {
-			return "But it's okay, " + getName() + " has revived as they are immortal!\n";
+			return revived;
 		}
 		else {
 			setAge(0);
-			return "There is no coming back from this.\n";
+			return dead;
 		}
 	}
 }
